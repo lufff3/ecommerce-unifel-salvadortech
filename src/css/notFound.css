@@ -1,0 +1,40 @@
+.not-found-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Preenche a altura total da tela */
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    color: #333; /* Cor do texto */
+    padding: 20px;
+  }
+  
+  .not-found-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #d9534f; /* Cor vermelha suave para destaque */
+  }
+  
+  .not-found-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #666; /* Cor cinza suave */
+    max-width: 600px;
+  }
+  
+  .not-found-button {
+    background-color: #007bff; /* Cor azul para o botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+  }
+  
+  .not-found-button:hover {
+    background-color: #0056b3; /* Cor mais escura ao passar o mouse */
+  }
+  

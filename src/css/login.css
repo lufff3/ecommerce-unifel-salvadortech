@@ -1,0 +1,113 @@
+/* login.css */
+#login-page {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-attachment: fixed; /* Fundo fixo ao rolar */
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95); /* Fundo levemente opaco */
+    padding: 60px;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Sombra mais forte */
+    max-width: 500px; /* Aumentar a largura máxima */
+    width: 100%;
+    min-height: 500px; /* Altura mínima para o contêiner */
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px; /* Espaçamento maior */
+    color: #333;
+    font-size: 32px; /* Fonte maior */
+    font-weight: 700; /* Fonte mais forte */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Espaçamento maior entre os elementos */
+}
+
+label {
+    margin-bottom: 8px; /* Margem maior abaixo do label */
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    padding: 16px; /* Mais padding para campos maiores */
+    border-radius: 10px; /* Bordas arredondadas maiores */
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 18px; /* Fonte maior para os inputs */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="email"], input[type="password"] {
+    background: #f9f9f9;
+    color: #333;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #696969; /* Cor do foco */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Sombra de foco mais intensa */
+}
+
+button {
+    padding: 16px; /* Mais padding para um botão maior */
+    background: #007bff;
+    color: #fff;
+    font-size: 20px; /* Fonte maior no botão */
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; /* Bordas arredondadas maiores */
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #0056b3; /* Cor de hover */
+    transform: translateY(-3px); /* Leve elevação */
+}
+
+button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px; /* Fonte maior para o texto */
+    margin-top: 10px; /* Margem maior acima do parágrafo */
+}
+
+.valid-message {
+    color: #28a745; /* Verde para sucesso */
+}
+
+.invalid-message {
+    color: #dc3545; /* Vermelho para erro */
+}
+
+/* Animação de Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

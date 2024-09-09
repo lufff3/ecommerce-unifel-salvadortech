@@ -1,0 +1,116 @@
+.productDetail-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-detalhes {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4F4F4F;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.button-detalhes:hover {
+  background-color: #0056b3;
+}
+
+.productDetail-title {
+  text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #007bff, #28a745);
+    border-radius: 8px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.productDetail-details-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productDetail-image {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productDetail-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.productDetail-name {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.productDetail-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.productDetail-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.productDetail-price {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d9534f;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #28a745;
+  border-radius: 5px;
+  color: #fff;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+
+.notFound {
+  text-align: center;
+  font-size: 4.5rem;
+  color: #ffffff;
+  margin-top: 50px;
+}

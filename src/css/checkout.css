@@ -1,0 +1,129 @@
+/* checkout.css */
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Para centralizar verticalmente */
+    padding: 20px;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para manter o botão sempre na parte de baixo */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Ajuste de largura para centralização */
+    max-width: 600px; /* Largura máxima para manter o container menor */
+    height: 80vh; /* Altura fixa ou pode ser ajustada conforme necessidade */
+    overflow: hidden; /* Para esconder o overflow não necessário */
+}
+
+.products-table-container {
+    flex-grow: 1; /* Permite que a tabela cresça e ocupe o espaço disponível */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+}
+
+.products-list h2 {
+    margin-bottom: 15px;
+}
+
+.products-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.products-table th, .products-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.total-label {
+    font-weight: bold;
+}
+
+.total-amount {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.finalize-button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center; /* Centraliza o botão horizontalmente */
+    width: 100%;
+}
+
+.finalize-button:hover {
+    background-color: #45a049;
+}
+
+.payment-methods {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.payment-methods h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.payment-options-container {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os itens */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.payment-option:hover {
+    background-color: #e6f7ff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-option input {
+    margin-right: 8px;
+}
+
+.payment-option label {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #555;
+}
